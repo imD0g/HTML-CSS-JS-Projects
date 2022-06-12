@@ -16,6 +16,9 @@ btn.addEventListener("click", function(){
 }) 
 
 // Create a function to get a random number to use withing our JS for a random background colour
+// Math.floor rounds the random number to the lowest integer 
+// Math.random is giving us a random number between 0 and 1, and then we * it by the number of entries in our array
+// When we times it by the number of entries in our array, that lets us get a number between 0-3 for our index
 function getrandomnumber(){
       return Math.floor(Math.random()*colours.length);
 }
